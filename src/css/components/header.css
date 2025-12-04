@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    align-items: center;
+
+    & ul {
+        display: flex;
+        gap: 60px;
+        font: var(--font-2-m);
+        align-items: center;
+
+
+
+        & a {
+            display: flex;
+            flex-wrap: nowrap;
+            color: var(--c11);
+        }
+
+        & .spot-logo {
+            margin-right: -50px;
+
+            & img {
+                width: 80px;
+            }
+        }
+    }
+}
