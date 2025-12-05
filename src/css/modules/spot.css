@@ -1,0 +1,25 @@
+/* Hero Section */
+.hero {
+    background-image:
+        linear-gradient(to right, rgba(248, 164, 27, .4), rgba(80, 129, 202, .4)),
+        url('../../../public/img/spot/hero.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Points Section */
+.points {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../../../public/img/spot/page-break.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: -1;
+    }
+}

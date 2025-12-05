@@ -9,3 +9,4 @@
 @import './components/components.css';
 
 /* Importing pages styles */
+@import './modules/spot.css';
