@@ -1,8 +1,7 @@
 .container {
     box-sizing: border-box;
-    max-width: 1200px;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+    max-width: 1440px;
+    padding: 40px 80px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -14,4 +13,13 @@
     margin-left: 20px;
     height: 2px;
     background: linear-gradient(to right, var(--r1), var(--r4));
+}
+
+.img-shadow{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.img-border-radius-right{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }

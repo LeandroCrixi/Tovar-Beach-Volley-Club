@@ -1,25 +1,280 @@
 /* Hero Section */
 .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
     background-image:
-        linear-gradient(to right, rgba(248, 164, 27, .4), rgba(80, 129, 202, .4)),
+        linear-gradient(to right, rgba(248, 164, 27, .5), rgba(80, 129, 202, .5)),
         url('../../../public/img/spot/hero.jpg');
     background-size: contain;
     background-repeat: no-repeat;
+
+    & div {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--w);
+        text-align: center;
+        z-index: 2;
+        width: 700px;
+
+        & h1 {
+            color: var(--spot-b1);
+            text-transform: uppercase;
+
+            & span {
+                color: var(--spot-y1);
+            }
+        }
+    }
+}
+
+/* Next Event Section */
+.next-event {
+    justify-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--c4);
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding-top: 20px;
+
+        & li {
+            justify-items: center;
+            align-items: center;
+
+            & p {
+                font: var(--font-2-xl);
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+/* Qué es Spot Beach Camps? */
+.spot {
+    justify-items: center;
+
+    & img {
+        margin: 20px 0px 40px 0px;
+    }
+
+    & p {
+        font: var(--font-2-l);
+        text-align: left;
+        text-indent: 4rem;
+    }
 }
 
 /* Points Section */
 .points {
     position: relative;
-    z-index: 1;
+    display: flex;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../../../public/img/spot/page-break.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
 
-    &::before {
-        content: "";
+    & ul {
         position: absolute;
-        inset: 0;
-        background-image: url('../../../public/img/spot/page-break.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        opacity: 0.5;
-        z-index: -1;
+        display: flex;
+        z-index: 2;
+        justify-content: center;
+
+        & li {
+            text-align: center;
+            font: var(--font-1-xxl);
+            color: var(--spot-b1);
+        }
+    }
+}
+
+/* Service Section */
+.service {
+    background-color: var(--bg1);
+    padding-top: 40px;
+
+    & .service-intro {
+        display: flex;
+        align-items: center;
+
+        & h2 {
+            padding-bottom: 40px;
+        }
+
+        & p {
+            width: 600px;
+            font: var(--font-2-l);
+            text-align: left;
+        }
+    }
+
+    & .service-features {
+        display: flex;
+        padding: 40px 20px;
+        gap: 40px;
+
+        & .services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 360px;
+            border-radius: 20px;
+            border: 2px solid var(--c4);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            background-color: var(--w);
+            gap: 40px;
+            padding: 20px;
+            text-align: center;
+            flex-wrap: wrap;
+
+            & h3 {
+                font: var(--font-2-l-b);
+                color: var(--spot-b1);
+            }
+
+            & p {
+                font: var(--font-2-m)
+            }
+        }
+    }
+}
+
+/* Previous Events Section */
+.previous-events {
+    justify-items: center;
+
+    & .previous {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 40px 0px;
+
+        & .event {
+            width: 560px;
+            border-radius: 10px;
+            border: 2px solid var(--c4);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+
+            & img {
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            & div {
+                padding: 0px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font: var(--font-2-l);
+
+                & .event-intro {
+                    & span {
+                        margin-top: 20px;
+                        font: var(--font-2-m);
+                        color: var(--spot-y1);
+                        background-color: var(--c2);
+                        width: fit-content;
+                        border-radius: 20px;
+                        padding: 10px;
+                    }
+
+                    & h4 {
+                        font: var(--font-2-xl);
+                        color: var(--spot-b1);
+                    }
+
+                    & ul {
+                        & li {
+                            display: flex;
+                            gap: 10px;
+                        }
+                    }
+                }
+
+                & .line {
+                    height: 2px;
+                    background-color: var(--c4);
+                    width: 100%;
+                }
+
+                & .event-highlights {
+                    & h5 {
+                        color: var(--spot-b1);
+                    }
+
+                    & ul {
+                        list-style-type: disc;
+                        margin-left: 20px;
+
+                        & li {
+                            padding-bottom: 10px;
+
+                            &::marker {
+                                color: var(--spot-y1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .pics {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 40px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        & img {
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--spot-b1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--spot-y1);
+    border-radius: 10px;
+}
+
+/* Location Section */
+.location {
+    justify-items: center;
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-items: center;
+        border: 2px solid var(--c4);
+        border-radius: 20px;
+        padding: 40px 80px;
+
+        & h3{
+            display: flex;
+            
+            gap: 10px;
+            font: var(--font-1-xxl);
+            color: var(--w);
+        }
     }
 }

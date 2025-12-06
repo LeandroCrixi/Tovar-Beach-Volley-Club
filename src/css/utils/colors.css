@@ -1,14 +1,34 @@
 :root {
     /* shades of black and white */
-    --c12: #000000;
+    /* --c12: #000000; */
     --c11: #151515;
+    --c4: #CCCCCC;
     --c2: #EDEDED;
-    --c1: #F7F7F7;
+    /* --c1: #F7F7F7; */
     --w: #FFFFFF;
 
+    /* Background Color */
+    --bg1: #FFFBF0;
+
     /* Main colors */
-    --r1: #FFC8C8;
+    /* --r1: #FFC8C8;
     --r4: #C51718;
     --b4: #004f9f;
-    --y3: #FFCC00;
+    --y3: #FFCC00; */
+
+    /* Spot Colors */
+    --spot-b1: #5081CA;
+    --spot-y1: #F8A41B;
+}
+
+.w{
+    color: var(--w);
+}
+
+.spot-b1 {
+    color: var(--spot-b1);
+}
+
+.spot-y1 {
+    color: var(--spot-y1);
 }
