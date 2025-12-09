@@ -52,12 +52,42 @@
         }
     }
 
-    & p{
+    & p {
         text-align: center;
         font: var(--font-2-s);
 
-        & a{
+        & a {
             color: var(--spot-b1);
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .footer {
+        & div {
+            flex-direction: column;
+            justify-items: center;
+            margin: 0 auto;
+            padding-bottom: 20px;
+
+            & .footer-logos {
+                flex-direction: row;
+            }
+
+            & .footer-contact {
+                text-align: center;
+                gap: 20px;
+                order: 1;
+
+                & .footer-social-media {
+                    flex-direction: row;
+                }
+            }
+
+            & .footer-info {
+                text-align: center;
+                gap: 20px;
+            }
         }
     }
 }
