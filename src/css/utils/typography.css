@@ -28,6 +28,8 @@
     --font-1-xxl: 400 4rem/1.1 var(--font-DM-Sans);
     --font-1-xl: 600 2rem/1.3 var(--font-DM-Sans);
 
+
+
     /* Montserrat */
     --font-2-xl: 400 2rem/1.3 var(--font-Montserrat);
     --font-2-l: 400 1.5rem/1.5 var(--font-Montserrat);
@@ -39,6 +41,16 @@
 .font-title {
     font: var(--font-title);
     letter-spacing: 0.05em;
+}
+
+.font-1-xxl {
+    font: var(--font-1-xxl);
+    letter-spacing: .02em;
+}
+
+.font-1-xl {
+    font: var(--font-1-xl);
+    letter-spacing: .02em;
 }
 
 .font-2-l {

@@ -7,6 +7,23 @@
     color: var(--c11);
 }
 
+html {
+    font-size: 16px;
+    /* base */
+}
+
+@media (max-width: 830px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+}
+
 html,
 body {
     height: 100%;
@@ -17,7 +34,10 @@ body {
     /* line-height: 1.5; */
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
     margin: 0px;
 }
 
