@@ -38,18 +38,17 @@
 
         & div {
             top: 35%;
-            left: 50%;
             width: 100%;
-            padding: 0 10px;
+            padding: 0 40px;
         }
     }
 }
 
 @media (max-width: 440px) {
-    & div {
-        top: 50%;
-        left: 50%;
-        width: 100%;
+    .hero {
+        & div {
+            top: 40%;
+        }
     }
 }
 
