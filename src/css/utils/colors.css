@@ -1,10 +1,8 @@
 :root {
     /* shades of black and white */
-    /* --c12: #000000; */
     --c11: #151515;
     --c4: #CCCCCC;
     --c2: #EDEDED;
-    /* --c1: #F7F7F7; */
     --w: #FFFFFF;
 
     /* Background Color */
@@ -14,8 +12,11 @@
     /* Main colors */
     --r1: #FFC8C8;
     --r4: #C51718;
-    /* --b4: #004f9f;
-    --y3: #FFCC00; */
+    --b1: #8BBAC8;
+    --b4: #004f9f;
+    --b5: #07254A;
+    --y2: #E79F3B;
+    --y3: #FFCC00;
 
     /* Spot Colors */
     --spot-b1: #5081CA;

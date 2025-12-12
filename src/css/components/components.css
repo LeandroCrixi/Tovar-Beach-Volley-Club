@@ -6,8 +6,8 @@
     margin-right: auto;
 }
 
-@media (max-width: 430px){
-    .container{
+@media (max-width: 430px) {
+    .container {
         padding: 20px;
     }
 }
@@ -30,8 +30,8 @@
     border-bottom-right-radius: 50px;
 }
 
-@media (max-width: 1030px){
-    .img-border-radius-right{
+@media (max-width: 1030px) {
+    .img-border-radius-right {
         border-radius: 50px;
         width: 90%;
         margin: 0 auto;
@@ -41,14 +41,31 @@
 .cta-btn {
     display: flex;
     width: max-content;
-    padding: 20px 40px;
-    background-color: var(--spot-y1);
+    padding: 20px;
     justify-items: center;
     align-items: center;
     border-radius: 100px;
-    gap: 40px;
-    
-    & a{
+    gap: 10px;
+}
+
+.hero-cta-btn-y {
+    background-color: var(--y2);
+    color: var(--b4);
+    font: var(--font-1-m-b);
+    text-transform: uppercase;
+}
+
+.hero-cta-btn-b {
+    background-color: var(--b1);
+    color: var(--w);
+    font: var(--font-1-m-b);
+    text-transform: uppercase;
+}
+
+.cta-btn-spot {
+    background-color: var(--spot-y1);
+
+    & a {
         color: var(--w);
         font: var(--font-1-xl);
     }

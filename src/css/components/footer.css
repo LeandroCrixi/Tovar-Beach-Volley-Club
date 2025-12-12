@@ -72,6 +72,7 @@
 
             & .footer-logos {
                 flex-direction: row;
+                gap: 40px;
             }
 
             & .footer-contact {

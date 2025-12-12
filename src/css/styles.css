@@ -9,4 +9,5 @@
 @import './components/components.css';
 
 /* Importing pages styles */
+@import './modules/home.css';
 @import './modules/spot.css';

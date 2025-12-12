@@ -1,0 +1,38 @@
+/* Hero Section */
+.home-hero {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-image:
+        linear-gradient(to right, rgba(0, 79, 159, .5), rgba(197, 23, 24, .5)),
+        url('../../../public/img/home/hernan.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    & div {
+        position: absolute;
+        top: 30%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        color: var(--w);
+        text-align: center;
+        z-index: 2;
+        width: 500px;
+
+        & h1 {
+            color: var(--spot-b1);
+            text-transform: uppercase;
+
+            & span {
+                color: var(--spot-y1);
+            }
+        }
+
+        & .hero-btn{
+            display: flex;
+            gap: 40px;
+            top: 140%;
+            left: 55%;
+        }
+    }
+}
