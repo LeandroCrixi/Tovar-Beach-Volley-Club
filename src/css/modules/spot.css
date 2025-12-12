@@ -55,6 +55,13 @@
 /* Next Event Section */
 .next-event {
     justify-items: center;
+
+    /* ensure heading is centered across browsers (including Safari) */
+    & h2 {
+        text-align: center;
+        width: 100%;
+    }
+
     padding-bottom: 40px;
     border-bottom: 2px solid var(--c4);
 
@@ -66,12 +73,15 @@
         padding-top: 20px;
 
         & li {
-            justify-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
 
             & p {
-                font: var(--font-2-xl);
+                font: var(--font-2-l);
                 padding-top: 10px;
+                text-align: center;
             }
         }
     }
@@ -116,7 +126,8 @@
 
         & img {
             width: 240px;
-            margin: 20px 0px 40px 0px;
+            display: block;
+            margin: 20px auto 40px auto;
         }
     }
 
