@@ -28,11 +28,100 @@
             }
         }
 
-        & .hero-btn{
+        & .hero-btn {
             display: flex;
             gap: 40px;
             top: 140%;
             left: 55%;
+        }
+    }
+}
+
+/* Servicios Section */
+.home-servicios {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg1);
+    padding-bottom: 40px;
+
+    & .servicios-1 {
+        display: flex;
+
+        & .servicios-content {
+            padding: 0px 40px 0px 80px;
+
+            & p {
+                margin-top: 20px;
+                font: var(--font-2-l);
+                color: var(--b5);
+            }
+        }
+    }
+
+    & .servicios-2 {
+        display: flex;
+        margin-top: 100px;
+        padding: 10px;
+        gap: 20px;
+
+        & .service-features {
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            padding: 40px 10px;
+            justify-items: center;
+            text-align: center;
+            gap: 40px;
+            border-radius: 20px;
+            border: 2px solid var(--c4);
+
+            & img {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+            }
+
+            & h3 {
+                font: var(--font-2-xl);
+                color: var(--b4);
+                font-weight: 700;
+            }
+
+            & p {
+                font: var(--font-2-m);
+            }
+        }
+    }
+}
+
+/* Experience Section */
+.home-experiencia {
+    background-color: var(--bg2);
+    & h1 {
+        color: var(--b4);
+        text-align: center;
+    }
+
+    & p{
+        font: var(--font-2-l);
+        padding: 40px 80px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    & .pics {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 40px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        & img {
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
         }
     }
 }

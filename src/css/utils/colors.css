@@ -7,6 +7,7 @@
 
     /* Background Color */
     --bg1: #FFFBF0;
+    --bg2: #F9F5EB;
     --bg-footer: #F9F5EB;
 
     /* Main colors */
@@ -25,6 +26,10 @@
 
 .w{
     color: var(--w);
+}
+
+.b4{
+    color: var(--b4)
 }
 
 .spot-b1 {

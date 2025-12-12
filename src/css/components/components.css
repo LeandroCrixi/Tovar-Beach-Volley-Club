@@ -30,6 +30,11 @@
     border-bottom-right-radius: 50px;
 }
 
+.img-border-radius-left {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
 @media (max-width: 1030px) {
     .img-border-radius-right {
         border-radius: 50px;
