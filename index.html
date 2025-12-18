@@ -101,18 +101,282 @@
                 disponibilidad, Desde principiantes hasta jugadores avanzados, tenemos un lugar para ti.</p>
 
             <div class="pics">
-                <img src="./public/img/home/servicios.jpg" alt="Galería campamento - imagen 1">
-                <img src="./public/img/home/hernan.jpg" alt="Galería campamento - imagen 4">
-                <img src="../../public/img/spot/pic3.jpg" alt="Galería campamento - imagen 3">
-                <img src="../../public/img/spot/pic5.jpg" alt="Galería campamento - imagen 5">
-                <img src="../../public/img/spot/pic2.jpg" alt="Galería campamento - imagen 2">
-                <img src="../../public/img/spot/pic6.jpg" alt="Galería campamento - imagen 6">
+                <img src="./public/img/home/pic1.jpg" alt="Galería campamento - imagen 1">
+                <img src="./public/img/home/pic2.jpg" alt="Galería campamento - imagen 2">
+                <img src="./public/img/home/pic3.jpg" alt="Galería campamento - imagen 3">
+                <img src="./public/img/home/pic4.jpg" alt="Galería campamento - imagen 4">
+                <img src="./public/img/home/pic5.jpg" alt="Galería campamento - imagen 5">
             </div>
         </section>
 
-        <section class="home-clases"></section>
+        <section class="home-clases">
+            <div class="clases-info">
+                <div class="clases-img">
+                    <img class="img-border-radius-right img-shadow" src="./public/img/home/clases.png" alt="">
+                </div>
+                <div class="clases-content">
+                    <h1 class="font-title b4">Clases para todos los niveles</h1>
+                    <p>Aqui contamos con clases para todos los niveles: desde <span>Iniciación</span> para quienes dan
+                        sus primeros pasos en el vóley playa, pasando por <span>Intermedio</span> y
+                        <span>Avanzado</span> para quienes buscan mejorar su rendimiento, hasta
+                        <span>Tecnificación</span>, pensado para perfeccionar la técnica y alcanzar un nivel
+                        profesional. Sea cual sea tu experiencia, tenemos un programa perfecto para ti.
+                    </p>
+                </div>
+            </div>
+
+            <div class="clases-hours">
+                <h1 class="font-title b4">Horarios</h1>
+                <div class="timetable">
+                    <!-- Radios must come FIRST -->
+                    <input type="radio" name="nivel" id="init" checked>
+                    <input type="radio" name="nivel" id="inter">
+                    <input type="radio" name="nivel" id="adv">
+                    <input type="radio" name="nivel" id="tec">
+
+                    <!-- Labels can be anywhere AFTER radios -->
+                    <div class="tabs">
+                        <label for="init">Iniciación</label>
+                        <label for="inter">Intermedio</label>
+                        <label for="adv">Avanzado</label>
+                        <label for="tec">Tecnificación</label>
+                    </div>
+
+                    <!-- Content must also be AFTER radios -->
+                    <div class="tab-content">
+                        <div class="content init">
+                            <p>Perfecto para comenzar tu viaje en el voleibol de playa</p>
+                            <div class="schedule">
+                                <div class="schedule1">
+                                    <p>Lunes y Miércoles</p>
+                                    <ul>
+                                        <li><img src="./public/icons/clock-night.svg" alt="">19:00 - 20:30</li>
+                                        <li class="space"><img src="./public/icons/clock-night.svg" alt="">20:30 - 22:00
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="line"></div>
+                                <div class="schedule1">
+                                    <p>Martes y Jueves</p>
+                                    <ul>
+                                        <li><img src="./public/icons/clock-day.svg" alt="">08:45 - 10:15</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content inter">
+                            <p>Mejora tus habilidades y técnica</p>
+                            <div class="schedule">
+                                <div class="schedule1">
+                                    <p>Lunes y Miércoles</p>
+                                    <ul>
+                                        <li><img src="./public/icons/clock-night.svg" alt="">18:00 - 19:30</li>
+                                        <li class="space"><img src="./public/icons/clock-night.svg" alt="">20:30 - 22:00
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="line"></div>
+                                <div class="schedule1">
+                                    <p>Martes y Jueves</p>
+                                    <ul>
+                                        <li><img src="./public/icons/clock-day.svg" alt="">09:30 - 11:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content adv">
+                            <p>Entrena intensamente con jugadores experimentados</p>
+                            <div class="schedule">
+                                <div class="schedule1">
+                                    <p>Lunes y Miércoles</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="schedule1">
+                                    <p>Martes y Jueves</p>
+                                    <ul>
+                                        <li><img src="./public/icons/clock-night.svg" alt="">16:00 - 17:30</li>
+                                        <li class="space"><img src="./public/icons/clock-night.svg" alt="">19:30 - 21:00
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content tec">
+                            <p>Preparación profesional y competitiva</p>
+                            <div class="schedule">
+                                <div class="schedule1">
+                                    <p>Lunes y Miércoles</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="schedule1">
+                                    <p>Martes y Jueves</p>
+                                    <ul>
+                                        <li class="space"><img src="./public/icons/clock-night.svg" alt="">18:00 - 19:30
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./src/pages/clases.html" class="cta-btn hero-cta-btn-y">Saiba mais SOBRE LAS CLASES <img
+                        src="./public/icons/arrow.svg" alt=""></a>
+            </div>
+        </section>
+
+        <section class="points-section">
+            <img src="./public/icons/wave-point-400.svg" alt="">
+            <div class="points-content">
+                <div>
+                    <h4>200 +</h4>
+                    <p>Jugadores Activos</p>
+                </div>
+                <div>
+                    <h4>4 +</h4>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div>
+                    <h4>4</h4>
+                    <p>Niveles de Entrenamiento</p>
+                </div>
+                <div>
+                    <h4>300 +</h4>
+                    <p>Clases Anuales</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="precios-section container">
+            <h2 class="font-title b4">Planes de precios</h2>
+            <p>Elige el plan que mejor se adapte a tu disponibilidad y objetivos. Todos incluyen acceso a nuestras
+                instalaciones de arena.</p>
+
+            <div class="precios-table">
+                <div class="price">
+                    <h3>30€<span>/ mes</span></h3>
+                    <p>Todos los niveles disponibles</p>
+                    <ul>
+                        <li><img src="./public/icons/price-calendar.svg" alt="">1 clase por semana</li>
+                        <li><img src="./public/icons/price-clock.svg" alt="">4 sesiones al mes</li>
+                    </ul>
+
+                    <div class="discount">
+                        <p>Descuentos por compromiso:</p>
+                        <ul>
+                            <li>3 meses: 81€ (10% descuento)</li>
+                            <li>12 meses: 324€ (10% descuento)</li>
+                        </ul>
+                    </div>
+
+                    <a class="cta-btn price-cta-btn-rb" href="">RESERVA TU PLAZA</a>
+                </div>
+                <div class="price price-highlight">
+                    <h3>60€<span>/ mes</span></h3>
+                    <p>Todos los niveles disponibles</p>
+                    <ul>
+                        <li><img src="./public/icons/price-calendar.svg" alt="">2 clases por semana</li>
+                        <li><img src="./public/icons/price-clock.svg" alt="">8 sesiones al mes</li>
+                    </ul>
+
+                    <div class="discount">
+                        <p>Descuentos por compromiso:</p>
+                        <ul>
+                            <li>3 meses: 162€ (10% descuento)</li>
+                            <li>12 meses: 648€ (10% descuento)</li>
+                        </ul>
+                    </div>
+
+                    <a class="cta-btn hero-cta-btn-y" href="">RESERVA TU PLAZA</a>
+                </div>
+                <div class="price">
+                    <h3>90€<span>/ por 2 meses</span></h3>
+                    <p>Todos los niveles disponibles</p>
+                    <ul>
+                        <li><img src="./public/icons/price-calendar.svg" alt="">Flexible</li>
+                        <li><img src="./public/icons/price-clock.svg" alt="">10 entrenamientos</li>
+                    </ul>
+
+                    <a class="cta-btn price-cta-btn-rb btn-90" href="">RESERVA TU PLAZA</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Break -->
+        <img src="./public/img/home/page-break.png" alt="" srcset="">
+
+        <section class="team-section container">
+            <h2 class="font-title b4">Nuestro Equipo</h2>
+            <p>Profesionales apasionados dedicados a tu desarrollo</p>
+            <div class="team-pics">
+                <div class="team-member">
+                    <img src="./public/img/about/hernan.png" alt="">
+                    <p>hernán tovar</p>
+                </div>
+                <div class="team-member">
+                    <img src="./public/img/about/mila.png" alt="">
+                    <p>Mila freinik</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parceros -->
+        <section class="parceros-section container">
+            <h2 class="font-title b4">Nuestros Patrocinadores</h2>
+            <div>
+                <img src="./public/img/home/partner1.svg" alt="">
+                <img src="./public/img/home/partner2.svg" alt="">
+                <img src="./public/img/home/partner3.svg" alt="">
+            </div>
+        </section>
+
+        <section class="cta container">
+            <h2>¿Encontraste tu nivel?</h2>
+            <p>Escríbenos y te ayudamos a dar el siguiente paso.</p>
+            <a href="" class="cta-btn hero-cta-btn-y"><img src="./public/icons/tovar-cta-whatsapp.svg" alt="">Envíanos
+                un mensaje</a>
+        </section>
+
     </main>
-    <footer></footer>
+    <footer class="footer container">
+        <div>
+            <div class="footer-logos">
+                <img src="../../public/icons/tovar-logo.svg" alt="Tovar Beach Volley Club - logotipo">
+                <img src="../../public/icons/spot-logo1.svg" alt="Spot Beach Camps - logotipo">
+            </div>
+            <img class="map" src="./public/img/map.png" alt="">
+
+            <div class="footer-contact">
+                <h4 class="bold">Contacto</h4>
+                <div>
+                    <ul>
+                        <li><a href="https://wa.me/+34603138263" target="_blank"><img
+                                    src="./public/icons/footer-phone.svg" alt="">+34 603 13 82 63</a></li>
+                        <li><a href="mailto:info@tovarvolleyclub.com" target="_blank"><img
+                                    src="./public/icons/footer-mail.svg" alt="">info@tovarvolleyclub.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-media">
+                    <a href="https://wa.me/+34603138263" target="_blank"><img
+                            src="../../public/icons/spot-footer-whatsapp.svg" alt="WhatsApp"></a>
+                    <a href="https://www.instagram.com/tovarbeachvolleyclub/" target="_blank"><img
+                            src="../../public/icons/spot-footer-ig.svg" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <h4 class="bold">Informaciones</h4>
+                <ul>
+                    <li><a href="./src/pages/sobre-el-club.html">Sobre el Club</a></li>
+                    <li><a href="./src/pages/clases.html">Clases</a></li>
+                    <!-- <li><a href="">Team Building</a></li> -->
+                    <li><a href="./src/pages/beach-camps.html">Beach Camps</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Tovar © Copyright 2025• Todos los derechos reservados</p>
+        <p>Sitio web diseñado y administrado por <a href="https://leo-crixi.com/" target="_blank">Leo Crixi</a></p>
+    </footer>
 </body>
 
 </html>

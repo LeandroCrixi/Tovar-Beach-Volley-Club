@@ -54,7 +54,7 @@
 }
 
 .hero-cta-btn-y {
-    background-color: var(--y2);
+    background-color: var(--y3);
     color: var(--b4);
     font: var(--font-1-m-b);
     text-transform: uppercase;
@@ -62,6 +62,13 @@
 
 .hero-cta-btn-b {
     background-color: var(--b1);
+    color: var(--w);
+    font: var(--font-1-m-b);
+    text-transform: uppercase;
+}
+
+.price-cta-btn-rb {
+    background: linear-gradient(to right, var(--r4), var(--b5));
     color: var(--w);
     font: var(--font-1-m-b);
     text-transform: uppercase;

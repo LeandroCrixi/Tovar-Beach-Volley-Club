@@ -33,6 +33,10 @@
             gap: 40px;
             top: 140%;
             left: 55%;
+
+            & .hero-cta-btn-y {
+                background-color: var(--y2);
+            }
         }
     }
 }
@@ -97,12 +101,13 @@
 /* Experience Section */
 .home-experiencia {
     background-color: var(--bg2);
+
     & h1 {
         color: var(--b4);
         text-align: center;
     }
 
-    & p{
+    & p {
         font: var(--font-2-l);
         padding: 40px 80px;
         margin: 0 auto;
@@ -123,5 +128,545 @@
             height: 200px;
             object-fit: cover;
         }
+    }
+}
+
+/* Clases Section */
+.home-clases {
+    padding-top: 40px;
+    background-color: var(--bg1);
+
+    & .clases-info {
+        display: flex;
+        gap: 40px;
+
+        & .clases-content {
+            padding-right: 100px;
+
+            & p {
+                font: var(--font-2-l);
+                width: 600px;
+                padding-top: 20px;
+                margin: 0 auto;
+
+                & span {
+                    color: var(--b5);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    & .clases-hours {
+        padding: 40px 0px;
+        justify-items: center;
+        text-align: center;
+
+        /* Hide radios */
+        & .timetable {
+            padding: 40px 0px;
+            justify-items: center;
+
+            & input {
+                display: none;
+            }
+
+            /* Tabs */
+            & .tabs {
+                display: flex;
+                gap: 0;
+                justify-content: center;
+
+                & label {
+                    padding: .5rem 1rem;
+                    cursor: pointer;
+                    background: var(--c4);
+                    font: var(--font-2-l-b);
+                    color: var(--b5);
+                    border-style: solid;
+                    border-left-width: 1px;
+                    border-right-width: 1px;
+                    border-bottom-width: 1px;
+                }
+            }
+
+            & #init:checked~.tabs label[for="init"],
+            #inter:checked~.tabs label[for="inter"],
+            #adv:checked~.tabs label[for="adv"],
+            #tec:checked~.tabs label[for="tec"] {
+                background: var(--b4);
+                color: var(--w);
+            }
+
+            & .tab-content {
+
+                /* Hide all contents */
+                & .content {
+                    display: none;
+                    justify-items: center;
+
+                    & p {
+                        font: var(--font-2-xl);
+                        padding: 40px;
+                        font-weight: 700;
+                    }
+
+                    & .schedule {
+                        display: flex;
+                        width: fit-content;
+                        margin: 0 auto;
+                        border: 2px solid var(--c4);
+                        border-radius: 20px;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+                        background-color: var(--w);
+
+                        & .line {
+                            height: auto;
+                            width: 2px;
+                            background-color: var(--c4);
+                        }
+
+                        & p {
+                            color: var(--b4);
+                        }
+
+                        & ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+
+                            & li {
+                                display: flex;
+                                justify-content: center;
+                                gap: 10px;
+                                font: var(--font-2-l);
+                                color: var(--b5);
+                            }
+
+                            & .space {
+                                padding-bottom: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Show active content */
+            & #init:checked~.tab-content .init,
+            #inter:checked~.tab-content .inter,
+            #adv:checked~.tab-content .adv,
+            #tec:checked~.tab-content .tec {
+                display: block;
+
+            }
+        }
+
+        & a {
+            margin: 0 auto;
+        }
+    }
+}
+
+/* Points Section */
+.points-section {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-image: url('../../../public/img/home/points-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .points-content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+        display: flex;
+        justify-items: center;
+        width: 100%;
+        color: var(--w);
+        gap: 20px;
+
+        & div {
+            width: 190px;
+            margin: 0 auto;
+
+            & h4 {
+                font: var(--font-1-xxl);
+                color: var(--y3);
+            }
+
+            & p {
+                font: var(--font-1-xl);
+                color: var(--w);
+            }
+        }
+    }
+}
+
+/* Precios Section */
+.precios-section {
+    background-color: var(--bg1);
+    font: var(--font-2-l);
+
+    & p {
+        color: var(--b5);
+        text-align: center;
+    }
+
+    & .precios-table {
+        padding-top: 40px;
+        display: flex;
+        gap: 40px;
+
+        & .price {
+            justify-items: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px 0px;
+            border: 4px solid var(--c1);
+            background-color: var(--w);
+            border-radius: 20px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
+            & h3 {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                font: var(--font-1-xxl);
+                color: var(--b4);
+
+                & span {
+                    font: var(--font-2-l);
+                    color: var(--c4);
+                }
+            }
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                padding: 20px 0px;
+                width: fit-content;
+                margin: 0 auto;
+
+                & li {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                }
+            }
+
+            & .discount {
+                background-color: var(--c1);
+                padding: 20px;
+                border-radius: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+
+                & p {
+                    font: var(--font-1-m-b);
+                }
+
+                & ul {
+                    & li {
+                        font: var(--font-1-m);
+                        color: var(--b4);
+                    }
+                }
+            }
+
+            & a {
+                margin: 0 auto;
+            }
+
+            & .btn-90 {
+                margin-top: 190px;
+            }
+        }
+
+        & .price-highlight {
+            border-color: var(--y3);
+            border-width: 5px;
+        }
+    }
+}
+
+/* Team Section */
+.team-section {
+    background-color: var(--bg2);
+
+    & p {
+        font: var(--font-2-l);
+        color: var(--b5);
+    }
+
+    & .team-pics {
+        display: flex;
+        justify-items: center;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 40px;
+
+        & .team-member {
+            margin: 0 auto;
+            text-align: center;
+
+            & img {
+                max-width: 350px;
+                height: auto
+            }
+
+            & p {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+/* Parceros Section */
+.parceros-section {
+    & div {
+        display: flex;
+        justify-items: center;
+        margin: 0 auto;
+        gap: 40px;
+        padding-top: 40px;
+    }
+}
+
+/* CTA */
+.cta {
+    background-color: var(--bg2);
+
+    & h2,
+    p,
+    a {
+        color: var(--c11);
+    }
+
+    & h2 {
+        font: var(--font-1-xxl);
+    }
+
+    & p {
+        font: var(--font-1-xl);
+    }
+
+    & a {
+        padding: 20px 40px;
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1030px) {
+
+    .home-hero div {
+        left: 60%;
+    }
+
+    .servicios-2,
+    .precios-table,
+    .parceros-section div,
+    .team-section,
+    .team-pics,
+    .servicios-1,
+    .clases-info,
+    .parceros-section {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .servicios-1 {
+        gap: 40px;
+
+        & img {
+            border-radius: 0px;
+        }
+    }
+
+    .home-clases {
+        & .clases-info {
+            & .clases-content {
+                padding: 20px;
+
+                & p {
+                    width: 100%;
+                }
+            }
+        }
+
+        & .clases-hours {
+            text-align: center;
+
+            & .timetable {
+                & .tabs {
+                    justify-content: center;
+                }
+
+                .tab-content {
+                    & .content {
+                        & p {
+                            padding: 20px;
+                        }
+
+                        & .schedule {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+
+            & a {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .precios-section {
+        text-align: center;
+
+        & .precios-table {
+            justify-content: center;
+        }
+    }
+
+    .parceros-section div {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .home-hero {
+        background-size: cover;
+        background-position: center;
+
+        & div {
+            width: 100%;
+            left: 60%;
+            transform: translate(-60%, -40%);
+            text-align: center;
+
+            & .hero-btn {
+                left: 56%;
+                width: fit-content;
+
+                & .cta-btn {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .home-servicios {
+        padding-top: 40px;
+
+        & .servicios-1 {
+            & .servicios-content {
+                padding: 0px 40px;
+            }
+        }
+
+        & .servicios-2 {
+            margin-top: 50px;
+
+            & .service-features {
+                width: 180px;
+                padding: 20px;
+                gap: 20px;
+            }
+        }
+    }
+
+    .home-experiencia {
+        & p {
+            padding: 20px;
+        }
+    }
+
+    .home-clases {
+        & .clases-hours {
+            text-align: center;
+
+            & .timetable {
+                justify-content: center;
+                justify-items: center;
+                margin: 0px 10px;
+
+                .tab-content {
+                    & .content {
+                        & p {
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+
+            & a {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .points-section {
+        & .points-content {
+            display: none;
+        }
+    }
+
+    .precios-section {
+        & .precios-table {
+            & .price {
+                max-width: 300px;
+
+                & h3,
+                .discount {
+                    justify-content: center;
+                }
+
+                & h3 {
+                    padding-bottom: 20px;
+                }
+
+                & ul {
+                    gap: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: flex-start;
+                    width: fit-content;
+                    margin: 0 auto;
+
+                    & li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 12px;
+                    }
+                }
+
+                & .discount {
+                    margin: 20px 40px;
+                    text-align: center;
+                }
+
+                & a {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .team-section .team-pics {
+        gap: 40px;
+    }
+
+    .cta p {
+        margin: 0 auto;
+        max-width: 90%;
     }
 }

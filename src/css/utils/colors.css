@@ -3,6 +3,7 @@
     --c11: #151515;
     --c4: #CCCCCC;
     --c2: #EDEDED;
+    --c1: #F7F7F7;
     --w: #FFFFFF;
 
     /* Background Color */
@@ -30,6 +31,14 @@
 
 .b4{
     color: var(--b4)
+}
+
+.y2{
+    background-color: var(--y2);
+}
+
+.y3{
+    background-color: var(--y3);
 }
 
 .spot-b1 {
