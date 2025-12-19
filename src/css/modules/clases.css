@@ -1,0 +1,113 @@
+#clases {
+
+    /* Hero Section */
+    & .hero-section {
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-image:
+            linear-gradient(to right, rgba(0, 79, 159, .5), rgba(197, 23, 24, .5)),
+            url('../../../public/img/clases/clases-hero.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        & div {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--w);
+            text-align: center;
+            z-index: 2;
+            width: 800px;
+
+            & h1 {
+                color: var(--w);
+                text-transform: uppercase;
+
+                & span {
+                    color: var(--y3);
+                }
+            }
+        }
+    }
+
+    /* Nivel Section */
+    & .nivel-section {
+        & .nivel {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px 0px;
+            justify-content: center;
+
+            & .nivel-group {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 560px;
+                border: 2px solid var(--c4);
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
+                & img {
+                    border-radius: 20px;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+                }
+
+                & h4 {
+                    font: var(--font-1-xl);
+                    color: var(--b4);
+                }
+
+                & ul {
+                    padding: 0px 20px;
+
+                    & li {
+                        list-style: disc;
+                        font: var(--font-2-l);
+                        color: var(--b5);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    #clases {
+        & .hero-section {
+            & div {
+                width: 100%;
+                left: 60%;
+                transform: translate(-60%, -40%);
+                text-align: center;
+
+                & h1 {
+                    font-size: 4rem;
+                }
+
+                & p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        & .nivel-section{
+            padding: 40px;
+            & h1{
+                text-align: center;
+            }
+
+            & .nivel{
+                 justify-content: center;
+
+                 & .nivel-group{
+                    width: 400px;
+                 }
+            }
+        }
+    }
+}

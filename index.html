@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Tovar Beach Volley Club - Club de Vóley playa en Valencia">
-    <meta name="keywords" content="BEACH VOLLEY CLUB VÓLEY PLAYA EN VALENCIA Entrenamientos Torneos">
+    <meta name="description"
+        content="Tovar Beach Volley Club - Club de vóley playa en Valencia. Clases, entrenamientos y torneos para todos los niveles. Únete a la comunidad de beach volley en Valencia.">
+    <meta name="keywords"
+        content="beach volley club, vóley playa, valencia, entrenamientos, torneos, clases de vóley playa, team building, beach camps">
     <meta name="author" content="Leo Crixi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tovarvolleyclub.com/">
 
     <!-- Open Graph / Facebook / WhatsApp / Linkedin -->
     <meta property="og:title" content="Tovar Beach Volley Club">
@@ -28,27 +32,34 @@
 <body>
     <header class="menu">
         <nav>
-            <ul>
+            <a href="./" class="mobile-logo-link"><img src="./public/icons/tovar-logo.svg" alt="Tovar Logo" class="mobile-logo"></a>
+            <button class="burger" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><button class="close-menu" aria-label="Close menu">&times;</button></li>
                 <li><a href="./"><img src="./public/icons/tovar-logo.svg" alt="Tovar Logo"></a></li>
-                <li class="./src/pages/sobre-el-club.html"><a href="">Sobre el Club</a></li>
-                <li class="./src/pages/clases.html"><a href="">Clases</a></li>
-                <li class=""><a href="">Team Building</a></li>
+                <li class=""><a href="./sobre-el-club/">Sobre el Club</a></li>
+                <li class=""><a href="./clases/">Clases</a></li>
+                <li class=""><a href="./team-building/">Team Building</a></li>
                 <li class="spot-logo"><img src="./public/icons/spot-logo.svg" alt="Spot Camp Logo"></li>
-                <li class=""><a href="./src/pages/beach-camps.html">Beach Camps</a></li>
+                <li class=""><a href="./beach-camps/">Beach Camps</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="home-hero">
-            <img src="../../public/icons/home-wave-700.png" alt="">
+            <img src="../../public/icons/home-wave-700.png" alt="Decoración de ola para el encabezado">
             <div>
                 <h1 class="font-title">Tovar Beach <span class="font-title">Volley Club</span></h1>
                 <p class="font-2-l-b w">CLUB DE VÓLEY PLAYA EN VALENCIA</p>
                 <div class="hero-btn">
-                    <a href="./src/pages/sobre-el-club.html" class="cta-btn hero-cta-btn-y">Conoce el Club<img
+                    <a href="./sobre-el-club/" class="cta-btn hero-cta-btn-y">Conoce el Club<img
                             src="./public/icons/arrow.svg" alt=""></a>
-                    <a href="./src/pages/clases.html" class="cta-btn hero-cta-btn-b">Horarios y Tarifas</a>
+                    <a href="./clases/" class="cta-btn hero-cta-btn-b">Horarios y Tarifas</a>
                 </div>
             </div>
         </section>
@@ -59,11 +70,12 @@
                     <h2 class="font-title b4">Qué ofrecemos</h2>
                     <p>En Tovar Beach Volley Club creemos que el voleibol de playa es más que un deporte. Es
                         comunidad, pasión y diversión bajo el sol.</p>
-                    <p>Experiencias de volleyball de playa diseñadas para todos, desde principiantes hasta atletas
+                    <p>Experiencias de vóley playa diseñadas para todos, desde principiantes hasta atletas
                         profesionales. Todo lo que necesitas para disfrutar y mejorar en el vóley playa.</p>
                 </div>
                 <div>
-                    <img class="img-border-radius-left img-shadow" src="./public/img/home/servicios.jpg" alt="">
+                    <img class="img-border-radius-left img-shadow" src="./public/img/home/servicios.jpg"
+                        alt="Jugadores de vóley playa en acción">
                 </div>
             </div>
             <div class="servicios-2">
@@ -112,11 +124,12 @@
         <section class="home-clases">
             <div class="clases-info">
                 <div class="clases-img">
-                    <img class="img-border-radius-right img-shadow" src="./public/img/home/clases.png" alt="">
+                    <img class="img-border-radius-right img-shadow" src="./public/img/home/clases.png"
+                        alt="Entrenador enseñando técnica de vóley playa">
                 </div>
                 <div class="clases-content">
                     <h1 class="font-title b4">Clases para todos los niveles</h1>
-                    <p>Aqui contamos con clases para todos los niveles: desde <span>Iniciación</span> para quienes dan
+                    <p>Aquí contamos con clases para todos los niveles: desde <span>Iniciación</span> para quienes dan
                         sus primeros pasos en el vóley playa, pasando por <span>Intermedio</span> y
                         <span>Avanzado</span> para quienes buscan mejorar su rendimiento, hasta
                         <span>Tecnificación</span>, pensado para perfeccionar la técnica y alcanzar un nivel
@@ -145,7 +158,7 @@
                     <!-- Content must also be AFTER radios -->
                     <div class="tab-content">
                         <div class="content init">
-                            <p>Perfecto para comenzar tu viaje en el voleibol de playa</p>
+                            <p>Perfecto para comenzar tu viaje en el vóley playa</p>
                             <div class="schedule">
                                 <div class="schedule1">
                                     <p>Lunes y Miércoles</p>
@@ -219,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="./src/pages/clases.html" class="cta-btn hero-cta-btn-y">Saiba mais SOBRE LAS CLASES <img
+                <a href="./clases/" class="cta-btn hero-cta-btn-y">Conoce más sobre las clases <img
                         src="./public/icons/arrow.svg" alt=""></a>
             </div>
         </section>
@@ -268,7 +281,9 @@
                         </ul>
                     </div>
 
-                    <a class="cta-btn price-cta-btn-rb" href="">RESERVA TU PLAZA</a>
+                    <a class="cta-btn price-cta-btn-rb"
+                        href="https://wa.me/34603138263?text=Hola%2C%20me%20gustar%C3%ADa%20contratar%20el%20plan%20de%20mantenimiento%20de%2030%20%E2%82%AC%20al%20mes.%20%C2%BFPodemos%20avanzar%20con%20ello%3F"
+                        target="_blank">RESERVA TU PLAZA</a>
                 </div>
                 <div class="price price-highlight">
                     <h3>60€<span>/ mes</span></h3>
@@ -286,7 +301,9 @@
                         </ul>
                     </div>
 
-                    <a class="cta-btn hero-cta-btn-y" href="">RESERVA TU PLAZA</a>
+                    <a class="cta-btn hero-cta-btn-y"
+                        href="https://wa.me/34603138263?text=Hola%2C%20me%20gustar%C3%ADa%20contratar%20el%20plan%20de%20mantenimiento%20de%2060%20%E2%82%AC%20al%20mes.%20Quedo%20atento%20para%20los%20siguientes%20pasos."
+                        target="_blank">RESERVA TU PLAZA</a>
                 </div>
                 <div class="price">
                     <h3>90€<span>/ por 2 meses</span></h3>
@@ -296,25 +313,27 @@
                         <li><img src="./public/icons/price-clock.svg" alt="">10 entrenamientos</li>
                     </ul>
 
-                    <a class="cta-btn price-cta-btn-rb btn-90" href="">RESERVA TU PLAZA</a>
+                    <a class="cta-btn price-cta-btn-rb btn-90"
+                        href="https://wa.me/34603138263?text=Hola%2C%20me%20gustar%C3%ADa%20contratar%20el%20plan%20de%20mantenimiento%20de%2090%20%E2%82%AC%20al%20mes.%20Av%C3%ADsame%20para%20coordinar%20el%20pago."
+                        target="_blank">RESERVA TU PLAZA</a>
                 </div>
             </div>
         </section>
 
         <!-- Page Break -->
-        <img src="./public/img/home/page-break.png" alt="" srcset="">
+        <img src="./public/img/home/page-break.png" alt="Separador de página decorativo">
 
         <section class="team-section container">
             <h2 class="font-title b4">Nuestro Equipo</h2>
             <p>Profesionales apasionados dedicados a tu desarrollo</p>
             <div class="team-pics">
                 <div class="team-member">
-                    <img src="./public/img/about/hernan.png" alt="">
-                    <p>hernán tovar</p>
+                    <img src="./public/img/about/hernan.png" alt="Hernán Tovar, entrenador de vóley playa">
+                    <p>Hernán Tovar</p>
                 </div>
                 <div class="team-member">
-                    <img src="./public/img/about/mila.png" alt="">
-                    <p>Mila freinik</p>
+                    <img src="./public/img/about/mila.png" alt="Mila Freinik, entrenadora de vóley playa">
+                    <p>Mila Freinik</p>
                 </div>
             </div>
         </section>
@@ -323,17 +342,18 @@
         <section class="parceros-section container">
             <h2 class="font-title b4">Nuestros Patrocinadores</h2>
             <div>
-                <img src="./public/img/home/partner1.svg" alt="">
-                <img src="./public/img/home/partner2.svg" alt="">
-                <img src="./public/img/home/partner3.svg" alt="">
+                <img src="./public/img/home/partner1.svg" alt="Patrocinador 1">
+                <img src="./public/img/home/partner2.svg" alt="Patrocinador 2">
+                <img src="./public/img/home/partner3.svg" alt="Patrocinador 3">
             </div>
         </section>
 
         <section class="cta container">
             <h2>¿Encontraste tu nivel?</h2>
             <p>Escríbenos y te ayudamos a dar el siguiente paso.</p>
-            <a href="" class="cta-btn hero-cta-btn-y"><img src="./public/icons/tovar-cta-whatsapp.svg" alt="">Envíanos
-                un mensaje</a>
+            <a href="https://wa.me/34603138263?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20niveles%2C%20horarios%20y%20precios."
+                target="_blank" class="cta-btn hero-cta-btn-y"><img src="./public/icons/tovar-cta-whatsapp.svg"
+                    alt="">Envíanos un mensaje</a>
         </section>
 
     </main>
@@ -343,7 +363,7 @@
                 <img src="../../public/icons/tovar-logo.svg" alt="Tovar Beach Volley Club - logotipo">
                 <img src="../../public/icons/spot-logo1.svg" alt="Spot Beach Camps - logotipo">
             </div>
-            <img class="map" src="./public/img/map.png" alt="">
+            <img class="map" src="./public/img/map.png" alt="Mapa de ubicación del club en Valencia">
 
             <div class="footer-contact">
                 <h4 class="bold">Contacto</h4>
@@ -367,10 +387,10 @@
             <div class="footer-info">
                 <h4 class="bold">Informaciones</h4>
                 <ul>
-                    <li><a href="./src/pages/sobre-el-club.html">Sobre el Club</a></li>
-                    <li><a href="./src/pages/clases.html">Clases</a></li>
+                    <li><a href="./sobre-el-club/">Sobre el Club</a></li>
+                    <li><a href="./clases/">Clases</a></li>
                     <!-- <li><a href="">Team Building</a></li> -->
-                    <li><a href="./src/pages/beach-camps.html">Beach Camps</a></li>
+                    <li><a href="./beach-camps/">Beach Camps</a></li>
                 </ul>
             </div>
         </div>
@@ -378,5 +398,10 @@
         <p>Sitio web diseñado y administrado por <a href="https://leo-crixi.com/" target="_blank">Leo Crixi</a></p>
     </footer>
 </body>
+
+<script type="module">
+    import { initBurgerMenu } from './src/js/modules/dom.js';
+    initBurgerMenu();
+</script>
 
 </html>

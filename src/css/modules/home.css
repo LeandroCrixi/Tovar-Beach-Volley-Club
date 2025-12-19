@@ -20,11 +20,11 @@
         width: 500px;
 
         & h1 {
-            color: var(--spot-b1);
+            color: var(--w);
             text-transform: uppercase;
 
             & span {
-                color: var(--spot-y1);
+                color: var(--y3);
             }
         }
 
@@ -214,6 +214,7 @@
                     & .schedule {
                         display: flex;
                         width: fit-content;
+                        min-height: 260px;
                         margin: 0 auto;
                         border: 2px solid var(--c4);
                         border-radius: 20px;
@@ -313,7 +314,7 @@
 
     & p {
         color: var(--b5);
-        text-align: center;
+        text-align: left;
     }
 
     & .precios-table {
@@ -516,6 +517,7 @@
 
                         & .schedule {
                             margin: 0 auto;
+                            min-height: 220px;
                         }
                     }
                 }
@@ -601,6 +603,12 @@
                     & .content {
                         & p {
                             padding: 20px;
+                            height: 60px;
+                        }
+
+                        & .schedule{
+                            margin-top: 20px;
+                            min-height: 165px;
                         }
                     }
                 }

@@ -10,4 +10,6 @@
 
 /* Importing pages styles */
 @import './modules/home.css';
+@import './modules/about.css';
+@import './modules/clases.css';
 @import './modules/spot.css';

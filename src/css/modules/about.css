@@ -1,0 +1,377 @@
+#about {
+
+    /* Hero Section */
+    & .hero-section {
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-image:
+            linear-gradient(to right, rgba(0, 79, 159, .5), rgba(197, 23, 24, .5)),
+            url('../../../public/img/about/hero.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        & div {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--w);
+            text-align: center;
+            z-index: 2;
+            width: 800px;
+
+            & h1 {
+                color: var(--w);
+                text-transform: uppercase;
+
+                & span {
+                    color: var(--y3);
+                }
+            }
+        }
+    }
+
+    /* About Section */
+    & .about-section {
+        display: flex;
+        padding: 40px 0px;
+        gap: 40px;
+        align-items: center;
+        background-color: var(--bg1);
+
+        & .about-content {
+            margin-left: 60px;
+            max-width: 650px;
+            /* min-width: 550px; */
+
+            & h2 {
+                font: var(--font-2-xl);
+                padding: 20px 0px;
+                color: var(--b5);
+            }
+
+            & p {
+                font: var(--font-2-l);
+
+                & span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    /* Team Section */
+    & .team-section {
+        background-color: var(--w);
+
+        & .team-pics {
+            display: flex;
+            justify-items: center;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 40px;
+            gap: 40px;
+
+            & .team-member {
+                justify-items: center;
+                margin: 0 auto;
+                text-align: center;
+
+                & img {
+                    max-width: 350px;
+                    height: auto;
+                    margin: 0 auto;
+                }
+
+                & .member-info {
+                    padding-top: 20px;
+                    max-width: 540px;
+
+                    font: var(--font-2-m);
+                    text-transform: none;
+                }
+            }
+        }
+    }
+
+    /* Mission Section */
+    & .mission-section {
+        background: linear-gradient(to right, var(--w) 0%, var(--w) 40%, var(--bg1) 40%, var(--bg1) 100%);
+        padding: 40px;
+
+        & .mission-img-title {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+
+            & img {
+                max-width: 700px;
+                border-radius: 20px;
+            }
+        }
+
+        & .mission-content {
+            display: flex;
+            padding-top: 40px;
+            gap: 100px;
+            font: var(--font-2-l);
+
+            & div {
+                & span {
+                    color: var(--b5);
+                }
+
+                & h2 {
+                    font: var(--font-2-xl);
+                    color: var(--b4);
+                    font-weight: 700;
+                }
+            }
+
+            & p {
+                max-width: 700px;
+            }
+        }
+    }
+
+    /* Vision Section */
+    & .vision-section {
+        background-color: var(--bg1);
+        padding: 40px 0px;
+
+        & div {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            padding-bottom: 40px;
+
+            & p {
+                font: var(--font-2-l);
+            }
+        }
+
+        & img {
+            width: 80%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+
+    /* Valores Section */
+    & .valores-section {
+        display: flex;
+        gap: 40px;
+        background: linear-gradient(to left, var(--w) 0%, var(--w) 40%, var(--bg1) 40%, var(--bg1) 100%);
+
+        & .valores-info {
+            width: 560px;
+
+            & ul {
+                padding-top: 40px;
+
+                & li {
+                    list-style: disc;
+                    font: var(--font-2-l);
+                    margin-bottom: 10px;
+
+                    & span {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        & .valores-img {
+            & span {
+                font: var(--font-2-l);
+                color: var(--b5);
+            }
+
+            & h2 {
+                font: var(--font-2-xl);
+                color: var(--b4);
+                font-weight: 700;
+                padding: 20px 0px;
+            }
+
+            & img {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    /* Responsabilidad Social Section */
+    & .resp-social-section {
+        & div {
+            display: flex;
+            gap: 80px;
+            align-items: center;
+
+            & p {
+                font: var(--font-2-l);
+                padding-top: 40px;
+            }
+
+            & img {
+                height: 500px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    #about {
+        img {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        & .hero-section {
+            & img {
+                width: 100%;
+            }
+
+            & div {
+                width: 100%;
+                left: 60%;
+                transform: translate(-60%, -40%);
+                text-align: center;
+
+                & h1 {
+                    font-size: 4rem;
+                }
+
+                & p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        & .about-section {
+            flex-direction: column;
+            text-align: center;
+
+            & .about-content {
+                margin: 0 auto;
+            }
+
+            & img {
+                width: 70%;
+                border-radius: 50px;
+                margin: 0 auto;
+            }
+        }
+
+        & .team-section {
+            & .team-pics {
+                & .team-member:first-child {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+
+        & .mission-section {
+            & .mission-img-title {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            & .mission-content {
+                gap: 40px;
+
+                & div {
+                    & h2 {
+                        font-size: 1.6rem;
+                        padding-top: 20px;
+                    }
+                }
+
+                & p {
+                    width: 100%;
+                }
+            }
+        }
+
+        & .vision-section {
+            & div {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            & img {
+                width: 100%;
+                border-radius: 0px;
+            }
+        }
+
+        & .valores-section {
+            flex-direction: column;
+
+            & .valores-info {
+                margin: 0 auto;
+            }
+
+            & .valores-img {
+                text-align: center;
+            }
+        }
+
+        & .resp-social-section {
+            text-align: center;
+
+            & div {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+
+        & .img-pb {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    #about {
+        & .hero-section {
+            & div {
+
+                & h1,
+                span {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        & .about-section {
+            padding: 20px;
+        }
+
+        & .team-section {
+            & .team-pics .team-member {
+                & .member-info {
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+
+            & .team-pics .team-member:first-child {
+                padding-bottom: 0px;
+            }
+        }
+
+        & .valores-section {
+            & .valores-info {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+
+        & .resp-social-section {
+            & div img {
+                height: auto;
+            }
+        }
+    }
+}
